@@ -4,4 +4,9 @@ describe("What Can I Drink", () =>{
             expect(whatCanIDrink(-5)).toBe("Sorry. I can’t tell what drink because that age is incorrect!");
         })
     })
+    describe("Drinking Age is less 14", ()=>{
+        it("should return 'Drink Toddy'", function(){
+            expect(whatCanIDrink(6)).toBe("Drink Toddy.")
+        })
+    })
 });
